@@ -8,7 +8,7 @@ The analysis is performed in Python using Jupyter Notebook and leverages the pub
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 - Perform data cleaning and exploratory data analysis
 - Handle missing or invalid health feature values appropriately
@@ -19,18 +19,31 @@ The analysis is performed in Python using Jupyter Notebook and leverages the pub
 
 ---
 
-## 🗂 Dataset Information
+## Key Findings
+
+- **Glucose level** was the strongest predictor of diabetes, with an odds ratio of approximately **3.26**, meaning higher glucose levels significantly increase risk.
+- **BMI** and **Pregnancies** also played meaningful roles in predicting diabetes.
+- The Logistic Regression model achieved:
+  - **Accuracy:** ~70.8%
+  - **ROC-AUC:** ~0.81
+  - A substantial improvement over the majority-class baseline accuracy of ~65%
+
+These findings align with existing medical knowledge, demonstrating both **validity** and **interpretability**.
+
+---
+
+## Dataset Information
 
 The dataset is publicly available from [Kaggle](https://www.kaggle.com/) and the [UCI Machine Learning Repository.](https://archive.ics.uci.edu/)
 
 - Features include: _Glucose, BMI, Insulin, Age, Skin Thickness, Blood Pressure, Pregnancies, Diabetes Pedigree Function_
 - Target label: **Outcome** (1 = diabetic, 0 = non-diabetic)
 
-📎 Dataset reference link:  
+## Dataset reference link:  
 https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database
 
 ---
 
-🛡 Disclaimer
+## Disclaimer!
 
 This project is for educational purposes only and not intended for clinical decision making.
