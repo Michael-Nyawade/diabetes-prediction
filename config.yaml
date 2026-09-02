@@ -1,6 +1,12 @@
 data:
   raw: data/raw
   processed: data/processed
-
+  raw_filename: diabetes.csv
+  invalid_zero_columns:
+    - Glucose
+    - BloodPressure
+    - SkinThickness
+    - Insulin
+    - BMI
 model:
   random_state: 42
