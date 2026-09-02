@@ -8,5 +8,13 @@ data:
     - SkinThickness
     - Insulin
     - BMI
+  target_column: Outcome
+
+split:
+  test_size: 0.2
+  random_state: 42
+  stratify: true
+
 model:
   random_state: 42
+  max_iter: 1000
