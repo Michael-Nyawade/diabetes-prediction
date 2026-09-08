@@ -49,28 +49,31 @@ running training.
 ```bash
 .
 ├── app/
-│ └── streamlit_app.py                  # Streamlit UI (thin layer over src/models/predict.py)
-├── config.yaml                         # data paths, split, and model parameters
+│   ├── __init__.py
+│   └── streamlit_app.py                    # Streamlit UI (thin layer over src/models/predict.py)
+├── config.yaml                             # data paths, split, and model parameters
 ├── data/
-│ ├── raw/                              # place diabetes.csv here (not tracked in git)
-│ └── processed/                        
-├── main.py                             # CLI entry point (train / predict)
-├── models/                             # trained model + scaler artifacts (not tracked in git)
-├── notebooks/                          # exploratory notebooks, calling into src/
-│ ├── 01_data_cleaning.ipynb
-│ ├── 02_exploratory_data_analysis.ipynb
-│ ├── 03_feature_engineering.ipynb
-│ └── 04_modeling.ipynb
-├── presentation/                       # slide deck summarizing the project
+│   ├── raw/                                # place diabetes.csv here (not tracked in git)
+│   └── processed/                
+├── main.py                                 # CLI entry point (train / predict)
+├── models/                                 # trained model + scaler artifacts (not tracked in git)
+├── notebooks/                              # jupyter notebooks, calling into src/
+│   ├── 01_data_cleaning.ipynb
+│   ├── 02_exploratory_data_analysis.ipynb
+│   ├── 03_feature_engineering.ipynb
+│   └── 04_modeling.ipynb
+├── reports/
+│   ├── figures/                            # generated EDA visualizations (not tracked in git)
+│   └── presentation/                       # slide deck summarizing the project
 ├── requirements.txt
 ├── src/
-│ ├── data/                             # load_data.py, preprocess.py
-│ ├── features/                         # feature_engineering.py (split + scale)
-│ ├── models/                           # train.py, predict.py, evaluate.py
-│ └── visualization/                    # plots.py
+│   ├── data/                               # load_data.py, preprocess.py
+│   ├── features/                           # feature_engineering.py (split + scale)
+│   ├── models/                             # train.py, predict.py, evaluate.py
+│   └── visualization/                      # plots.py
 └── tests/
-├── test_preprocessing.py
-└── test_model.py
+    ├── test_preprocessing.py
+    └── test_model.py
 ```
 
 
