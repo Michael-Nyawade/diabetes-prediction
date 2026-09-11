@@ -56,7 +56,7 @@ running training.
 │   ├── raw/                                # place diabetes.csv here (not tracked in git)
 │   └── processed/                
 ├── main.py                                 # CLI entry point (train / predict)
-├── models/                                 # trained model + scaler artifacts (not tracked in git)
+├── models/                                 # trained model + scaler artifacts
 ├── notebooks/                              # jupyter notebooks, calling into src/
 │   ├── 01_data_cleaning.ipynb
 │   ├── 02_exploratory_data_analysis.ipynb
